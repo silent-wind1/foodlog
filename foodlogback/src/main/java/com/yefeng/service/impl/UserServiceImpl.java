@@ -1,5 +1,6 @@
 package com.yefeng.service.impl;
 
+import com.yefeng.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -10,5 +11,10 @@ import org.springframework.stereotype.Service;
  */
 @Slf4j
 @Service
-public class UserServiceImpl {
+public class UserServiceImpl implements UserService {
+
+    @Override
+    public long userRegister(String userAccount, String userPassword, String checkPassword) {
+        return 0;
+    }
 }

@@ -12,6 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>3.3.5</spring-boot.version>
+        <mybatis-plus.version>3.5.11</mybatis-plus.version>
     </properties>
     <dependencies>
         <dependency>
@@ -50,16 +51,16 @@
             <version>8.3.0</version>
         </dependency>
 
+        <!-- MybatisPlus -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
-            <version>3.5.10.1</version>
+            <version>${mybatis-plus.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-extension</artifactId>
-            <version>3.5.10.1</version>
+            <artifactId>mybatis-plus-jsqlparser</artifactId>
         </dependency>
 
         <!-- 阿里JSON解析器 -->
@@ -67,6 +68,26 @@
             <groupId>com.alibaba.fastjson2</groupId>
             <artifactId>fastjson2</artifactId>
             <version>2.0.53</version>
+        </dependency>
+
+        <!-- hutool工具类 -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.36</version>
+        </dependency>
+
+        <!-- apache工具类 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <!--   腾讯云对象存储    -->
+        <dependency>
+            <groupId>com.qcloud</groupId>
+            <artifactId>cos_api-bundle</artifactId>
+            <version>5.6.35</version>
         </dependency>
 
     </dependencies>
@@ -80,6 +101,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-bom</artifactId>
+                <version>${mybatis-plus.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -90,8 +119,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>17</source>
-                    <target>17</target>
+                    <source>21</source>
+                    <target>21</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>

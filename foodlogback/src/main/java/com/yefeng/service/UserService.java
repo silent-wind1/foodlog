@@ -6,4 +6,5 @@ package com.yefeng.service;
  * @Description:
  */
 public interface UserService {
+    long userRegister(String userAccount, String userPassword, String checkPassword);
 }
