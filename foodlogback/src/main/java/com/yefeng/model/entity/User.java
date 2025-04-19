@@ -9,8 +9,9 @@ import lombok.Data;
  */
 @Data
 public class User {
-    private String id;
+    private Long id;
     private String name;
+    private String userAccount;
     private String password;
     private String avatar;
     private String createTime;
