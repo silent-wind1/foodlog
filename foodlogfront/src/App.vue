@@ -116,7 +116,7 @@ const foodList = ref([
   },
   {
     image: 'https://yefeng-1308017062.cos.ap-guangzhou.myqcloud.com//generator_picture/1777702612496613378/dEOxtB6F-《HeartCatch光之美少女》暗之美少女、月影百合4k壁纸.jpg',
-    shopName: '幸福小馆',
+    shopName: '真搞不懂GitHub',
     dishName: '招牌牛肉面',
     description: '汤头鲜美，牛肉大块软嫩，面条Q弹有嚼劲～',
     tags: ['牛肉面', '性价比高', '网红店']
