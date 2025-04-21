@@ -10,10 +10,12 @@ import lombok.Data;
 @Data
 public class User {
     private Long id;
-    private String name;
+    private String userName;
     private String userAccount;
-    private String password;
-    private String avatar;
+    private String userPassword;
+    private String userAvatar;
+    private String userProfile;
+    private String userRole;
     private String createTime;
     private String updateTime;
 }
