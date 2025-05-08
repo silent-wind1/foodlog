@@ -20,7 +20,7 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 12px;
+  padding: 0 12px;
   background: white;
 }
 

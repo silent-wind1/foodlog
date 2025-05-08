@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import Header from "@/components/Header.vue";
 
 const showUpload = ref(false);
 const fileList = ref([]);
@@ -28,6 +29,7 @@ const foodList = ref([
 </script>
 
 <template>
+  <Header/>
   <!-- 内容卡片 -->
   <div class="content-list">
     <div v-for="(item, index) in foodList" :key="index" class="card">
